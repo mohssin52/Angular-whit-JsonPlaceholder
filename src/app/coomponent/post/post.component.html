@@ -18,7 +18,7 @@
     <input [(ngModel)]="post.body" type="text" name="body" id="body" class="form-control" placeholder=""
       aria-describedby="helpId" required #postBody=ngModel
       >
-    <div class=" alert alert-danger" *ngIf="postBody.touched  && !postBody.valid ">
+    <div class=" alert alert-danger" *ngIf="postBody.touched && !postBody.valid ">
 
 
       <div *ngIf="postBody.errors?.required "> ce champ est obligatoir </div>
